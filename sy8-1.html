@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy8-1</title>
+	<style>
+ 	body{
+ 		background-color:#4F4F4F;
+  		color:#FFF;
+ }
+ p{
+  text-align:center;
+  font-weight:800;
+  font-size:24px;
+ }
+ .title{
+  color:#FFF;
+ }
+ .fieldset{
+  width:500px;
+  margin:auto;
+ }
+ .text{
+  width:100px;
+ }
+ #huowumingcheng{
+  width:320px;
+ }
+ #liang{
+  width:25px;
+ }
+ #fahuoshijian{
+  width:100px;
+ }
+ table{
+  border-spacing:20px;
+ }
+ #first{
+  display:inline-block;
+  width:200px;
+  text-align:left;
+ }
+ .qt{
+  display:inline-block;
+  width:35px;
+ }
+ .dh{
+  display:inline-block;
+  width:40px;
+ }
+ #select{
+  width:120px;
+ }
+ .r{
+  display:inline-block;
+  width:23px;
+ }
+ .m{
+  display:inline-block;
+  width:4px;
+ }
+</style>
+</head>
+
+<body>
+<form>
+<p>增加快递信息</p >
+<fieldset class="fieldset">
+<legend class="title">发货单</legend>
+<table>
+<tr>
+ <td>
+ <label id="first">发货人：<div class="r"></div><input type="text" name="fahuoren" class="text"></label>
+    <label id="first"> &nbsp;&nbsp; &nbsp;&nbsp; 地址：<input type="text" name="dizhi" class="text"></label>
+ </td>
+</tr>
+<tr>
+ <td>
+ <label id="first">电话：<div class="dh"></div><input type="text" name="dianhua" class="text"></label>
+ <label id="first"> &nbsp;&nbsp; &nbsp;&nbsp;邮编：<input type="text" name="youbian" class="text"></label>
+ </td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset class="fieldset">
+<legend class="title">收货单</legend>
+<table>
+<tr>
+ <td>
+ <label id="first">收货人：<div class="r"></div><input type="text" name="shouhuoren" class="text"></label>
+ <label id="first"> &nbsp;&nbsp; &nbsp;&nbsp;地址：<input type="text" name="dizhi" class="text"></label>
+ </td>
+</tr>
+<tr>
+    <td>
+ <label id="first">电话：<div class="dh"></div><input type="text" name="dianhua" class="text"></label>
+ <label id="first"> &nbsp;&nbsp; &nbsp;&nbsp;邮编：<input type="text" name="youbian" class="text"></label>
+ </td>
+</tr>
+<tr>
+ <td>
+ <label>地区：<div class="qt"></div></label>
+ <select id="select">
+  <option>北京</option>
+  <option>上海</option>
+  <option>天津</option>
+ </select>
+ </td>
+</tr>
+<tr>
+    <td>
+    <label>包装：<div class="qt"></div></label>
+    <input type="checkbox" name="baozhuang" value="baozhuang">
+    纸箱
+    <input type="checkbox" name="muxiang" value="muxiang">
+    木箱
+    <input type="checkbox" name="kuaididai" value="kuaididai">
+    快递袋
+    <input type="checkbox" name="qita" value="qita">
+    其他
+ </td>
+</tr>
+<tr>
+ <td>
+ <label>付款方式：</label>
+ <input type="radio" name="three" value="现金" id="xianjin">
+    <label for="xianjin">现金</label>
+ <input type="radio" name="three" value="支付宝" id="zhifubao">
+ <label for="zhifubao">支付宝</label>
+    <input type="radio" name="three" value="网银" id="wangyin">
+    <label for="wangyin">网银</label>
+    <input type="radio" name="three" value="ATM" id="ATM">
+    <label for="ATM">ATM</label>
+    </td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset class="fieldset">
+<legend class="title">货物信息</legend>
+<table>
+<tr>
+ <td>
+ <label>货物名称：<div class="m"></div><input type="text" name="huowumingcheng" id="huowumingcheng"></label>
+ </td>
+</tr>
+<tr>
+ <td>
+ <label>数量：<div class="qt"></div><input type="text" name="shuliang" id="liang"><div class="r"></div></label>
+ <label>重量：<input type="text" name="zhongliang" id="liang"></label>
+ <label>发货时间：<input type="text" name="fahuoshijian" id="fahuoshijian"></label>
+ </td>
+</tr>
+</table>
+</fieldset>
+
+
+</br>
+<center>
+<input type="submit" name="submit" value="确定">
+<input type="submit" name="submit" value="取消">
+</center>
+
+
+</form>
+
+</body>
+</html>
